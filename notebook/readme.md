@@ -546,15 +546,21 @@ lgb_model_optuna = build_evaluate_model(
     train_x=X_train, train_y=y_train, test_x=X_test, test_y=y_test
 )
 ```
+### Model Performance Summary Table
 
+| **Model**                  | **Training Accuracy** | **Test Accuracy** | **AUC (ROC)** | **Key Observations**                                                                                     |
+|----------------------------|-----------------------|-------------------|---------------|---------------------------------------------------------------------------------------------------------|
+| Logistic Regression        | 0.7630               | 0.7590            | 0.84          | Good generalization with no significant overfitting. Precision, recall, and F1-scores above 0.75.       |
+| Random Forest              | 0.9561               | 0.8558            | 0.93          | High training accuracy indicates some overfitting, but test accuracy and AUC remain strong.             |
+| LightGBM                   | 0.9191               | 0.8616            | 0.94          | Excellent test accuracy and AUC, indicating strong generalization and predictive capabilities.          |
+
+### Final Selected Model
+
+**LightGBM** with hyperparameters tuned by Optuna was selected as the final model due to its:  
+- High test accuracy (0.8616), showing strong generalization.  
+- AUC of 0.94, demonstrating excellent discriminatory power.  
+- Balanced performance across all metrics, making it the most reliable choice for this problem.  
 ---
-
-### **Final Notes**
-
-- **Performance Summary**:
-  - Logistic Regression: Accuracy = 0.7634
-  - Random Forest: Accuracy = 0.8615
-  - LightGBM: Accuracy = 0.8687
 
 - **Saving the Model**:
   ```python
