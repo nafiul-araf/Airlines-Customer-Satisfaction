@@ -1,5 +1,7 @@
 # Airlines Customer Satisfaction Analysis using Machine Learning
 
+![Watch the video](https://github.com/nafiul-araf/Airlines-Customer-Satisfaction/blob/main/project_video.mp4)
+
 ### **Project Summary: Airlines Customer Satisfaction Analysis**
 
 #### **Project Statement**  
