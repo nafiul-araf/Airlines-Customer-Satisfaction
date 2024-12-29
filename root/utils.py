@@ -12,7 +12,7 @@ from sklearn.preprocessing import MinMaxScaler
 import lightgbm
 
 
-model_data = joblib.load(r"D:/Data Science and Data Analytics/ML/Airlines Customer Satisfaction/root/model/model_data.pkl")
+model_data = joblib.load(r"root/model/model_data.pkl")
 model_data
 
 
