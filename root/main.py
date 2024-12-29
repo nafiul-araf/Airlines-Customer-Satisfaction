@@ -4,10 +4,10 @@ Created on Sun Dec 29 13:14:53 2024
 
 @author: Admin
 """
-import os
-print(os.getcwd())
+# import os
+# print(os.getcwd())
 
-os.chdir(r'D:\Data Science and Data Analytics\ML\Airlines Customer Satisfaction\root')
+# os.chdir(r'D:\Data Science and Data Analytics\ML\Airlines Customer Satisfaction\root')
 
 import streamlit as st
 from utils import predict  # Import the prediction function
@@ -24,7 +24,7 @@ with st.sidebar:
     2. Adjust sliders and dropdowns for precise inputs.
     3. Click 'Calculate Satisfaction' to analyze the results.
     """)
-    st.image(r"D:\Data Science and Data Analytics\ML\Airlines Customer Satisfaction\root\ABC_Airlines.JPG", caption="Fly with Comfort")  # Optional logo or image
+    st.image(r"root/ABC_Airlines.JPG", caption="Fly with Comfort")  # Optional logo or image
 
 # Customer Details
 st.subheader("👤 Customer Information")
