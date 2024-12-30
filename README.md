@@ -59,8 +59,108 @@ The aim of this project was to analyze and predict customer satisfaction for an 
 
 #### **Deployment and Impact**  
 The deployment on **Streamlit Cloud** enables stakeholders to leverage the model conveniently and effectively. By integrating predictive capabilities into the decision-making process, the airline can:  
-- Identify dissatisfied customers proactively.  
+- Identify dissatisfied customers proactively.
 - Tailor services to improve satisfaction rates.  
 - Enhance customer retention and boost loyalty, translating into better business outcomes.  
 
 This project demonstrates the power of machine learning in addressing real-world business challenges and creating data-driven solutions for customer-centric industries.
+---
+
+## **Project Structure**
+
+```
+project-root/
+│
+├── model/
+│   ├── model_data.pkl                # Serialized machine learning model and preprocessing data
+│
+├── ABC_Airlines.JPG                 # Project logo or related image
+├── readme.md                        # Documentation file
+├── main.py                          # Streamlit application file
+├── requirements.txt                 # List of required Python packages
+├── utils.py                         # Utility functions for prediction and preprocessing
+```
+
+---
+
+## **Prerequisites**
+
+Before running the project, ensure you have the following installed on your system:
+- **Python** (version 3.8 or above)
+- **pip** (Python package installer)
+
+---
+
+## **Setup Instructions**
+
+Follow these steps to set up and run the project on your local machine:
+
+### **1. Clone the Repository**
+
+Use the following command to clone the repository:
+
+```bash
+git clone https://github.com/<your-username>/airlines-customer-satisfaction.git
+```
+
+Navigate to the project directory:
+
+```bash
+cd airlines-customer-satisfaction/root
+```
+
+### **2. Create a Virtual Environment**
+
+It is recommended to create a virtual environment to isolate the project dependencies. Run the following commands:
+
+```bash
+python -m venv env
+source env/bin/activate        # For Linux/Mac
+env\Scripts\activate           # For Windows
+```
+
+### **3. Install Dependencies**
+
+Install the required Python packages using the `requirements.txt` file:
+
+```bash
+pip install -r requirements.txt
+```
+
+### **4. Run the Streamlit Application**
+
+Launch the Streamlit app with the following command:
+
+```bash
+streamlit run main.py
+```
+
+---
+
+## **Usage**
+
+1. After running the Streamlit app, it will open in your default web browser.
+2. Upload customer data or enter details manually into the input fields.
+3. Click the **"Predict"** button to see the prediction result (Satisfied/Dissatisfied).
+4. Review insights and recommendations based on the prediction.
+
+---
+
+## **Files and Directories**
+
+- **`model/model_data.pkl`**  
+  Contains the serialized LightGBM model and preprocessing pipeline.
+
+- **`main.py`**  
+  The main Streamlit application file to launch the web interface.
+
+- **`requirements.txt`**  
+  A list of Python libraries required to run the project.
+
+- **`utils.py`**  
+  Contains helper functions for preprocessing and prediction.
+
+- **`ABC_Airlines.JPG`**  
+  A visual asset for branding and representation in the project.
+
+---
